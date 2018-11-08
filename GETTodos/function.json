@@ -9,7 +9,7 @@
       "methods": [
         "get"
       ],
-      "route": "welcome"
+      "route": "todos"
     },
     {
       "type": "http",
