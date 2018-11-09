@@ -2,7 +2,6 @@
   "IsEncrypted": false,
   "Values": {
     "AzureWebJobsStorage": "",
-    "FUNCTIONS_WORKER_RUNTIME": "node",
-    "MONGOCONNECTION": "mongodb://localhost:27017/tododb"
+    "FUNCTIONS_WORKER_RUNTIME": "node"
   }
 }
