@@ -1,5 +1,5 @@
 const MongoClient = require('mongodb').MongoClient;
-const uri = 'mongodb://localhost:27017'
+const uri = 'mongodb://mongo:27017'
 
 function mongoClientConnect(){
     return new Promise((resolve,reject) => {
