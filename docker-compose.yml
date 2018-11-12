@@ -1,0 +1,26 @@
+
+version: '3.3'
+services:
+  app:
+    image: sganes/todoapp
+    container_name: app
+    ports: 
+      - 8080:80
+    environment:
+      - MONGO_URI=mongodb://sampledb/sample
+    depends_on: 
+      - db
+    networks: 
+      - samplenet
+  db:
+    image: mongo:3.0.15
+    container_name: sample_db
+    volumes:
+      - ./db:/data/db
+    networks:
+      samplenet:
+        aliases:
+          - "sampledb"
+networks:
+  samplenet:
+    driver: bridge
