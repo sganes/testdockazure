@@ -16,4 +16,8 @@ services:
     ports: 
       - 27017:27017
     volumes:
-      - /data./data/db  
+      - mongo:/data/db  
+    command:
+      --smallfiles  
+volumes:
+  mongo:      
